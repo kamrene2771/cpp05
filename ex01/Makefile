@@ -4,11 +4,11 @@ CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 
 RM = rm -f
 
-SRC = Bureaucrat.cpp main.cpp
+SRC = Bureaucrat.cpp main.cpp Form.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
-HEADERS = Bureaucrat.hpp
+HEADERS = Bureaucrat.hpp Form.hpp
 
 %.o: %.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
